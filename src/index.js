@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { WeatherProvider } from './context/Weather';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <WeatherProvider>x
     <App />
+    </WeatherProvider>
   </React.StrictMode>
 );
 
